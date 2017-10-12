@@ -4,22 +4,29 @@ Python 3.6.2 (v3.6.2:5fd33b5926, Jul 16 2017, 20:11:06)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
->>> canasta = ['manzana', 'naranja', 'manzana', 'pera', 'naranja', 'banana', 'banana', 'pera', 'pera']
->>> len(canasta)
+>>> cesta = ['melancia', 'laranja', 'melancia', 'pera', 'laranja', 'banana', 'banana', 'pera', 'pera']
+
+>>> len(cesta)
 9
 
->>> canasta_sem_repetir=set(canasta)
-
->>> canasta_sem_repetir
-{'naranja', 'banana', 'manzana', 'pera'}
-
->>> len(canasta_sem_repetir)
-4
-
->>> canasta.count('banana')
+>>> cesta.count('banana')
 2
 
->>> canasta
-['manzana', 'naranja', 'manzana', 'pera', 'naranja', 'banana', 'banana', 'pera', 'pera']
->>> 
+>>> type(cesta)
+<class 'list'>
 
+>>> cesta_sem_repetir = set(cesta)
+
+>>> cesta_sem_repetir
+{'pera', 'melancia', 'banana', 'laranja'}
+
+>>> len(cesta_sem_repetir)
+4
+
+>>> type(cesta_sem_repetir)
+<class 'set'>
+
+>>> lista_frutas = list(cesta_sem_repetir)
+
+>>> lista_frutas
+['pera', 'melancia', 'banana', 'laranja']
