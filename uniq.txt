@@ -4,34 +4,62 @@ Python 3.6.2 (v3.6.2:5fd33b5926, Jul 16 2017, 20:11:06)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
+# Cria uma lista:
 >>> cesta = ['melancia', 'laranja', 'melancia', 'pera', 'laranja', 'banana', 'banana', 'pera', 'pera']
 
+
+# Tamanho da lista (qtos itens):
 >>> len(cesta)
 9
 
+
+# Ordena lista:
 >>> cesta.sort()
 
+
+# Imprime lista ordenada:
 >>> cesta
 ['banana', 'banana', 'laranja', 'laranja', 'melancia', 'melancia', 'pera', 'pera', 'pera']
 
+
+# Conta o número de certos itens existe na lista:
 >>> cesta.count('banana')
 2
 
+
+# Tipo:
 >>> type(cesta)
 <class 'list'>
 
+
+# Aplica alternativa UNIQ para Python:
 >>> cesta_sem_repetir = set(cesta)
 
+
+# Imprime nova lista (sem itens repetidos):
 >>> cesta_sem_repetir
 {'pera', 'melancia', 'banana', 'laranja'}
 
+
+# Tamanho da lista sem itens repetidos:
 >>> len(cesta_sem_repetir)
 4
 
+
+# Porém veja o tipo dessa nova "lista":
 >>> type(cesta_sem_repetir)
 <class 'set'>
 
+
+# Cria nova lista (converte para lista) o "set" acima:
 >>> lista_frutas = list(cesta_sem_repetir)
 
+
+# Imprime lista final, sem itens repetidos:
 >>> lista_frutas
 ['pera', 'melancia', 'banana', 'laranja']
+
+
+
+
+ok!
