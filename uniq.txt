@@ -1,5 +1,17 @@
 ** ALTERNTIVA PYTHON PARA O COMANDO LINUX - SORT | UNIQ (ou sort -u): **
 
+RESUMO:
+
+    >>> cesta = ['melancia', 'laranja', 'melancia', 'pera', 'laranja', 'banana', 'banana', 'pera', 'pera']
+
+    >>> cesta_sem_repetir = set(cesta)
+
+    >>> cesta_sem_repetir
+    {'pera', 'melancia', 'banana', 'laranja'}
+
+
+DETALHES:
+
 Python 3.6.2 (v3.6.2:5fd33b5926, Jul 16 2017, 20:11:06) 
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
