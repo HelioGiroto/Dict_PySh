@@ -1,0 +1,7 @@
+Laranja	7,00
+Maca	6,00
+Melancia	12,00
+Caju	10,00
+Tomate	7,00
+Limao	4,00
+Manga	9,00
