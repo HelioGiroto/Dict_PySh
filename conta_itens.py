@@ -6,6 +6,12 @@
 copas = ["Alemanha", "Espanha", "Italia", "Brasil", "França", "Brasil", "Alemanha", "Argentina", "Italia", "Argentina", "Alemanha", "Brasil", "Inglaterra", "Brasil", "Brasil", "Alemanha", "Uruguai", "Italia", "Italia", "Uruguai"]
 campeoes = set(copas)
 
+qtas_copas = copas.len()
+qtos_campeoes = campeoes.len()
+
+print()
+print("Em toda história, tivemos", qtas_copas, "Copas do Mundo...")
+print("com", qtos_campeoes, "seleções campeãs!")
 print()
 
 for selecao in campeoes:
