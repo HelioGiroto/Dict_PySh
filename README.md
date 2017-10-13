@@ -7,3 +7,5 @@
 + [Alternativa Python para COMM](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/comm.py)
 
 
+Autor do projeto: Hélio Giroto
+Sob licensa do MIT
