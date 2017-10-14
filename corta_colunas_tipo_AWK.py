@@ -14,7 +14,7 @@ for planeta in planetas:
 
 	for cada_linha in arqFonte:
 		corte1 = cada_linha.split(';')[0]	# Corta primeira coluna
-		corte2 = corte1.split(' ')[0]		# Faz outro corte naq. que já cortei acima
+		corte2 = corte1.split(' ')[0]		# Faz outro corte naq. que já cortei acima - Como se usasse o PIPE: cut ... | cut...
 		
 		corteA = cada_linha.split(';')[1]	# Corta segunda coluna
 		corteB = corteA.split("'")[3]		# Faz outro corte na linha acima - (Ver *OBS - rodapé)
