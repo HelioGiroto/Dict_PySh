@@ -13,17 +13,18 @@ for planeta in planetas:
 	arqSaida=open(arqTXT, 'a')
 
 	for linha in arqFonte:
-		corte1=linha.split(';')[0]	# Pega primeira coluna
-		corte2=corte1.split(' ')[0]	# Faz outro corte do que já cortei acima
-		corteA=linha.split(';')[1]	# Pega segunda coluna
-		corteB=corteA.split("'")[3]	# Faz outro corte na linha acima - Ver *OBS
+		corte1=linha.split(';')[0]	# Corta primeira coluna
+		corte2=corte1.split(' ')[0]	# Faz outro corte naq. que já cortei acima
+		
+		corteA=linha.split(';')[1]	# Corta segunda coluna
+		corteB=corteA.split("'")[3]	# Faz outro corte na linha acima - (Ver *OBS - rodapé)
 
-		print(corte2, corteB)		# Imprime na tela ao mesmo tempo que grava em arquivo. Ver abaixo:
+		print(corte2, corteB)		# Imprime na tela ao mesmo tempo que grava em arquivo - Ver linha abaixo:
 		arqSaida.write(corte2 + '-' + corteB + '\n')
 
-	arqSaida.close()				# Fecha arquivo de escrita (de saida)
+	arqSaida.close()			# Fecha arquivo de escrita (de saida)
+	
 	#arqFonte.close() - Nao precisa fechar arq aberto para leitura!!! Dá erro.
-
 
 """
 
