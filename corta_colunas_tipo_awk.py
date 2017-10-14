@@ -1,4 +1,8 @@
-planetas=["Marte", "Jupiter", "Mercurio", "Venus", "Saturno"]
+#############################################################
+## Como cortamos CAMPOS de arq CSV tal como se faz no AWK  ##
+#############################################################
+
+planetas=["Marte", "Jupiter", "Mercurio", "Venus", "Saturno"]	# Essa lista é na vdd nomes de arquivos
 
 for planeta in planetas:
 	
@@ -23,7 +27,7 @@ for planeta in planetas:
 
 """
 
-(*) OBS - Este é o modelo de cada linha do arqFonte:
+(*) OBS - Este é o modelo de cada linha do arqFonte (.csv):
 
 2017/10/12 00:00:00;('Vir', 'Virgo');13:53:23.08;-10:32:04.1;13:54:17.90;-10:37:02.8
 
