@@ -6,23 +6,23 @@ planetas=["Marte", "Jupiter", "Mercurio", "Venus", "Saturno"]	# Essa lista é na
 
 for planeta in planetas:
 	
-	arqCSV=planeta+".csv"			# Concatena variável para formar nome dos arquivos
-	arqTXT=planeta+".txt"
+	arqCSV = planeta+".csv"				# Concatena variável para formar nome dos arquivos
+	arqTXT = planeta+".txt"
 
-	arqFonte=open(arqCSV, 'r')
-	arqSaida=open(arqTXT, 'a')
+	arqFonte = open(arqCSV, 'r')
+	arqSaida = open(arqTXT, 'a')
 
-	for linha in arqFonte:
-		corte1=linha.split(';')[0]	# Corta primeira coluna
-		corte2=corte1.split(' ')[0]	# Faz outro corte naq. que já cortei acima
+	for cada_linha in arqFonte:
+		corte1 = cada_linha.split(';')[0]	# Corta primeira coluna
+		corte2 = corte1.split(' ')[0]		# Faz outro corte naq. que já cortei acima
 		
-		corteA=linha.split(';')[1]	# Corta segunda coluna
-		corteB=corteA.split("'")[3]	# Faz outro corte na linha acima - (Ver *OBS - rodapé)
+		corteA = cada_linha.split(';')[1]	# Corta segunda coluna
+		corteB = corteA.split("'")[3]		# Faz outro corte na linha acima - (Ver *OBS - rodapé)
 
-		print(corte2, corteB)		# Imprime na tela ao mesmo tempo que grava em arquivo - Ver linha abaixo:
+		print(corte2, corteB)			# Imprime na tela ao mesmo tempo que grava em arquivo - Ver linha abaixo:
 		arqSaida.write(corte2 + '-' + corteB + '\n')
 
-	arqSaida.close()			# Fecha arquivo de escrita (de saida)
+	arqSaida.close()				# Fecha arquivo de escrita (de saida)
 	
 	#arqFonte.close() - Nao precisa fechar arq aberto para leitura!!! Dá erro.
 
