@@ -11,7 +11,7 @@
 
 + [Alternativa BASH para modulo JSON]()
 
-+ [Separador de milhar em Python e Bash](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/separador_milhar.txt)
++ [Separador de milhar em Python e Bash](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/separador-milhar.txt)
 
 
 Autor do projeto: Hélio Giroto
