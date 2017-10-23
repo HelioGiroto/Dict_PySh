@@ -1,8 +1,6 @@
-===========================
-=== SEPARADOR DE MILHAR ===
-===========================
+# SEPARADOR DE MILHAR
 
-Separador de milhar em Bash - usando SED e REV
+#### Separador de milhar em Bash - usando SED e REV
 
 Exemplo 1:
 echo $((2**56)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev
@@ -17,6 +15,6 @@ Até para valores que não tem ponto no inicio do número (como no exemplo núm 
 echo 12345 | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
 
 
-Separador de milhar em Python:
+#### Separador de milhar em Python:
 
 
