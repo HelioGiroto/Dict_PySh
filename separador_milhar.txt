@@ -17,4 +17,14 @@ echo 12345 | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
 
 #### Separador de milhar em Python:
 
+precio = int(input("Precio: "))
 
+#print('{:,}'.format(precio).replace(",", "."))
+# No ex acima, colocamos o separador de milhar, em seguida, mudamos a virgula para ponto. 
+
+print('O preço é: R$ {:,.2f}'.format(precio).replace(',', '_').replace('.', ',').replace('_', '.'))
+
+# Neste ex. mandamos imprimir com: separador de milhar e tb com 2 pontos flutuantes. Entao devemos trocar as virgulas em ponto e os pontos em vírgulas. Mas se troco 1ro. as virgulas em ponto, ficará tudo igual e não se saberá a diferença entre milhares e centavos! Por tanto...
+# 1ro: Mudo virgula POR -, 2do. mudo Ponto por virgula, e 3ro. mudo os _ em ponto.
+
+# Se quiser faça o replace por parte e veja o resultado.
