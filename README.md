@@ -7,6 +7,10 @@
 + [Alternativa Python para COMM](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/comm.py)
 + [Alternativa Python para AWK](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/corta_colunas_tipo_AWK.py)
 
+-
+
++ [Alternativa BASH para modulo JSON]()
+
 + [Separador de milhar em Python e Bash](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/separador_milhar.txt)
 
 
