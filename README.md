@@ -10,7 +10,6 @@
 -
 
 + [Alternativa BASH para modulo JSON]()
-
 + [Separador de milhar em Python e Bash](https://raw.githubusercontent.com/HelioGiroto/Dict_PySh/master/separador-milhar.txt)
 
 
