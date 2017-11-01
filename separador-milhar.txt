@@ -1,21 +1,45 @@
 # SEPARADOR DE MILHAR
 
-#### Separador de milhar em Bash - usando SED e REV
+****************************************************
+** Separador de milhar em Bash - usando SED e REV **
+****************************************************
 
 Exemplo 1:
-echo $((2**56)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev
+	echo $((2**56)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev
 
 Mas veja isso (Exemplo 2):
-echo $((2**56*10)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev
+	echo $((2**56*10)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev
 
 Então, resolvemos assim (Exemplo 3):
-echo $((2**56*10)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
+	echo $((2**56*10)) | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
+
 
 Até para valores que não tem ponto no inicio do número (como no exemplo núm 2) não interfere:
-echo 12345 | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
+	echo 12345 | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
 
 
-#### Separador de milhar em Python:
+printf "%.2f\n" "1234567"
+	1234567,00
+
+printf "%'d\n" "1234567"
+	1.234.567
+
+printf "%'.2f\n" "1234567"
+	1.234.567,00
+
+printf "R$ %'.2f\n" "1234567"
+	R$ 1.234.567,00
+__________________________________________________________________
+
+INVERSO:
+
+echo "123.123,50" | sed "s/\.//g; s/,//g"
+	12312350
+___________________________________________________________________
+
+************************************
+** Separador de milhar em Python: **
+************************************
 
 precio = int(input("Precio: "))
 
