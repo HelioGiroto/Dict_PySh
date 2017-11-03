@@ -17,6 +17,12 @@ Então, resolvemos assim (Exemplo 3):
 Até para valores que não tem ponto no inicio do número (como no exemplo núm 2) não interfere:
 	echo 12345 | rev | sed -E 's/([0-9]{3})/\1./g' | rev | sed 's/^\.//'
 
+OUTRA ALTERNATIVA (Mais completo para centavos e milhar):
+	echo 12345670091 | rev | sed 's/./&,/2' | sed -E 's/[0-9]{3}/&./g; s/.$//' | rev
+
+# No exemplo acima, o & faz o mesmo que \1 - Substitui agregando algo...
+
+
 ** USANDO PRINTF: **
 
 printf "%.2f\n" "1234567"
@@ -30,6 +36,11 @@ printf "%'.2f\n" "1234567"
 
 printf "R$ %'.2f\n" "1234567"
 	R$ 1.234.567,00
+	
+Printf com variáveis:
+
+	valor=1234567
+	printf "%'.2f\n" $valor
 __________________________________________________________________
 
 INVERSO:
