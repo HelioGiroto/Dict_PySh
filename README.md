@@ -14,4 +14,3 @@
 
 
 Autor do projeto: Hélio Giroto
-Sob licensa do MIT
