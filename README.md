@@ -14,3 +14,4 @@
 
 
 Autor do projeto: Hélio Giroto
+<a href="https://github.com/HelioGiroto/Dict_PySh/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Licença"></a> 
